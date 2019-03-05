@@ -2,11 +2,12 @@
 
 ## Python:
 
-real    1m18.793s
+real    2m16.087s
 
-user    0m50.054s
+user    1m4.397s
 
-sys     0m6.954s
+sys     0m4.352s
+
 
 ## Rust:
 
