@@ -21,13 +21,16 @@ fn main() {
     for line_raw in in_file.lines().skip(1) {
         let line = line_raw.unwrap();
         if idx < 3 {
-            println!("CURR: {}", line);
             row.push_str(&line[2..]);
             row.push('\t');
             idx = idx + 1;
         }
         else {
-            println!("Line: {}", row);
+            row.push('\n');
+            out_file.write_all(row.as_bytes())
+                .expect("Unable to write data");
+
+            // Clearing variables
             row = String::from("");
             idx = 0;
         }
