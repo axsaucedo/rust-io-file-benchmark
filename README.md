@@ -14,7 +14,7 @@ The experiment is as follows:
 
 ## Objective
 
-Objective is to read file, iterate through lines and write results to TSV (tab separated file)
+Objective is to read file, iterate through lines and write results to CSV/TSV
 
 ## Example
 
@@ -32,8 +32,8 @@ OBJECT 2 ATTR 3: CONTENT
 
 #### expected output file example
 
-OBJECT 1 ATTR1	OBJECT 1 ATTR 2	OBJECT 1 ATTR 3 <br>
-OBJECT 2 ATTR1	OBJECT 2 ATTR 2	OBJECT 2 ATTR 3
+OBJECT 1 ATTR1, OBJECT 1 ATTR 2, OBJECT 1 ATTR 3 <br>
+OBJECT 2 ATTR1, OBJECT 2 ATTR 2, OBJECT 2 ATTR 3
 ... etc
 
 
