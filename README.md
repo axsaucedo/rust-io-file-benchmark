@@ -1,8 +1,8 @@
 # Rust benchmarking on Large File IO
 
-This is an attempt to evaluate Rust's performance against Python's native IO library processing LARGE files.
+This is a short report on the performance metrics obtained processing large files with a small rust/python script.
 
-The definition of "Large" in this case are files that don't fit in memory.
+In this case the definition of "Large" is files that won't fit in memory easily (e.g. 100GB >) and require streaming / buffers.
 
 ## Experiment overview
 
