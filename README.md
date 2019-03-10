@@ -50,6 +50,8 @@ The results are provided below.
 
 ## Python:
 
+Simple python implementation without any buffering, using the native python file IO read_line / write.
+
 real    2m16.087s
 
 user    1m4.397s
@@ -58,6 +60,8 @@ sys     0m4.352s
 
 
 ## Rust 1.33 main.rs:
+
+Rust implementation using the BufReader and BufWriter converting to string, appending and writing bytes.
 
 real    7m28.602s
 
@@ -68,9 +72,22 @@ sys     0m5.094s
 
 ## Rust 1.33 main-vec.rs:
 
+Rust implementation using BufReader and Bufwriter, and using a vector to attempt single string concat.
+
 real    8m35.463s                                                                                        
 
 user    8m24.227s                                                                                        
 
 sys     0m5.918s
+
+## Rust 1.33 main-copy.rs:
+
+Rust implementation using plain File reading in bytes and copying it to another location without performing and processing.
+
+real    41m12.918s
+
+user    22m55.845s
+
+sys     18m15.949s
+
 
